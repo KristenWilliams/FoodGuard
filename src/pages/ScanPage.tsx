@@ -3,7 +3,7 @@ import {
   Card, Spinner, Flex, Separator,
 } from "@chakra-ui/react"
 import { LuCamera, LuUpload, LuImage, LuX, LuScanLine } from "react-icons/lu"
-import { FileUploadRoot, FileUploadDropzone } from "@/components/ui/file-upload"
+import { FileUploadRoot, FileUploadTrigger } from "@/components/ui/file-upload"
 import { useRef, useState, useCallback, useEffect } from "react"
 import { useNavigate } from "react-router-dom"
 import { analyzeIngredients, saveScan, fileToBase64 } from "@/lib/api"
@@ -173,22 +173,15 @@ export default function ScanPage() {
               </Button>
               <FileUploadRoot
                 accept="image/*"
+                flex="1"
                 onFileChange={(e) => handleFileUpload(e.acceptedFiles)}
               >
-                <FileUploadDropzone
-                  label="上传图片"
-                  description="支持 JPG、PNG 格式"
-                  flex="1"
-                  border="none"
-                  bg="transparent"
-                  cursor="pointer"
-                  p="0"
-                >
-                  <Button as="span" variant="outline" size="lg" w="full">
+                <FileUploadTrigger asChild>
+                  <Button variant="outline" size="lg" w="full">
                     <Icon mr="2"><LuUpload /></Icon>
                     上传
                   </Button>
-                </FileUploadDropzone>
+                </FileUploadTrigger>
               </FileUploadRoot>
             </HStack>
           </VStack>
