@@ -10,6 +10,9 @@ CREATE TABLE reference_sources (
 
 INSERT INTO reference_sources (name, short_name, region, url, description) VALUES
 ('中国食品安全国家标准', 'GB 2760', 'CN', 'https://std.samr.gov.cn/', '中国食品添加剂使用标准'),
+('中国食品安全国家标准', 'GB 2761', 'CN', 'https://std.samr.gov.cn/search/std?q=GB%202761', '中国食品中真菌毒素限量'),
+('中国食品安全国家标准', 'GB 2762', 'CN', 'https://std.samr.gov.cn/search/std?q=GB%202762', '中国食品中污染物限量'),
+('中国食品安全国家标准', 'GB 2763', 'CN', 'https://std.samr.gov.cn/search/std?q=GB%202763', '中国食品中农药最大残留限量'),
 ('中国预包装食品标签通则', 'GB 7718', 'CN', 'https://std.samr.gov.cn/', '中国食品标签标识规范'),
 ('中国国家食品药品监督管理总局', 'NMPA', 'CN', 'https://www.nmpa.gov.cn/', '中国药品食品监管'),
 ('U.S. Food and Drug Administration', 'FDA', 'US', 'https://www.fda.gov/', '美国食品药品监督管理局'),

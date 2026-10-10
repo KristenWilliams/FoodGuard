@@ -1,15 +1,25 @@
 {
-  "name": "template",
+  "name": "foodguard",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.2.2-preview",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "check:secrets": "node scripts/check-secrets.mjs",
+    "test:secrets": "node --test scripts/check-secrets.test.mjs",
+    "test": "npm --prefix server test",
+    "server:dev": "node server/analyze-server.mjs",
+    "android:add": "cap add android",
+    "android:sync": "npm run build && cap sync android",
+    "android:open": "cap open android"
   },
   "dependencies": {
+    "@capacitor/android": "^8.4.0",
+    "@capacitor/cli": "^8.4.0",
+    "@capacitor/core": "^8.4.0",
     "@chakra-ui/charts": "^3.36.0",
     "@chakra-ui/react": "^3.34.0",
     "@emotion/react": "^11.14.0",

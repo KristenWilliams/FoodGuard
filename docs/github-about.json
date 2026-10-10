@@ -1,0 +1,5 @@
+{
+  "description": "面向包装食品的配料与营养标签解读 Android 工具。支持自填 API 地址和 Key、模型选择、本机历史、中英文与应用内助理。Packaged-food label interpretation with BYO API keys.",
+  "homepage": "https://github.com/KristenWilliams/FoodGuard/releases",
+  "topics": ["android", "food-labels", "nutrition", "ingredients", "ai", "openai-compatible", "capacitor", "local-first"]
+}

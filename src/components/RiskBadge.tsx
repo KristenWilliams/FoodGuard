@@ -1,25 +1,15 @@
-import { Badge } from "@chakra-ui/react"
-
-const riskConfig = {
-  safe: { colorPalette: "green" as const, label: "安全" },
-  moderate: { colorPalette: "orange" as const, label: "注意" },
-  caution: { colorPalette: "red" as const, label: "谨慎" },
-}
+import { AssistantAvatar } from "@/components/AssistantAvatar"
+import { useLanguage } from "@/lib/i18n"
 
 export function RiskBadge({ risk, size = "sm" }: { risk: "safe" | "moderate" | "caution"; size?: "sm" | "md" | "lg" }) {
-  const config = riskConfig[risk]
+  const en = useLanguage() === "en"
   return (
-    <Badge colorPalette={config.colorPalette} variant="subtle" size={size}>
-      {config.label}
-    </Badge>
+    <span role="img" aria-label={en ? "Ingredient attention level" : "成分关注程度"} title={risk === "caution" ? en ? "Review the specific warning" : "重点留意" : risk === "moderate" ? en ? "Consider the amount" : "适量摄入" : en ? "Review with intake in mind" : "结合摄入量判断"}>
+      <AssistantAvatar size={size === "lg" ? 36 : size === "md" ? 30 : 26} mood={risk} />
+    </span>
   )
 }
 
 export function RiskLevelIcon({ risk }: { risk: "safe" | "moderate" | "caution" }) {
-  const config = riskConfig[risk]
-  return (
-    <Badge colorPalette={config.colorPalette} variant="solid" size="lg" borderRadius="full" px="3">
-      {config.label}
-    </Badge>
-  )
+  return <RiskBadge risk={risk} size="lg" />
 }

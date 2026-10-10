@@ -1,0 +1,12 @@
+{
+  "name": "foodguard-api",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test discover.test.mjs assistant-policy.test.mjs analysis.test.mjs api-server.test.mjs provider-request.test.mjs"
+  },
+  "dependencies": {
+    "ipaddr.js": "2.5.0",
+    "linkedom": "0.18.13"
+  }
+}

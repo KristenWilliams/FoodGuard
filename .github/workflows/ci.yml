@@ -1,0 +1,66 @@
+name: Checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: checks-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  source:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: |
+            package-lock.json
+            server/package-lock.json
+      - run: npm ci
+      - run: npm --prefix server ci
+      - run: npm run check:secrets -- --history
+      - run: npm run test:secrets
+      - run: npm run lint
+      - run: npx tsc -p tsconfig.app.json --noEmit
+      - run: npm test
+      - run: npm run build
+
+  android-preview:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 21
+      - uses: android-actions/setup-android@v3
+      - run: sdkmanager "platforms;android-36" "build-tools;35.0.0"
+      - run: npm ci
+      - run: npm run android:sync
+        env:
+          VITE_FOODGUARD_API_URL: https://foodguard.littlemelon.top
+      - run: chmod +x gradlew && ./gradlew testDebugUnitTest assembleDebug --no-daemon --console=plain
+        working-directory: android
+      - uses: actions/upload-artifact@v4
+        with:
+          name: foodguard-ci-debug-test-only
+          path: android/app/build/outputs/apk/debug/app-debug.apk
+          retention-days: 7
+
+# CI debug signatures can differ between runs. Artifacts are test builds,
+# not automatic Releases or an upgrade path for previously installed APKs.

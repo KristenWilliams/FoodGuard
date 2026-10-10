@@ -1,0 +1,57 @@
+{
+  "generator": "built-in image_gen",
+  "created": "2026-10-08",
+  "background": "transparent",
+  "rendering": "CSS sprite-frame animation; PNG sources retained unchanged",
+  "assets": [
+    {
+      "name": "smile",
+      "source": "exec-bcf79d4f-9d99-49f8-a329-253e8e6104e6.png",
+      "prompt": "Use case: stylized-concept. Asset type: production Android UI mascot animation sprite strip with real transparent alpha. Create ONE original friendly lemon-yellow softly sculpted face mascot, a slightly oval squishy head, two very large expressive white eyes and dark pupils, a small subtle curved smile. Premium clean restrained soft 3D clay rendering, warm yellow surface, no arms, no body, no accessories. Distinct original character, not Apple emoji, not any branded assistant. The asset has EXACTLY TWO equal square cells side by side, 2:1 canvas. LEFT cell: friendly gentle smile with eyes OPEN looking directly forward. RIGHT cell: same exact face, SAME smile, eyes CLOSED in a natural brief blink (two curved eyelid lines). Head scale, silhouette, lighting, center, mouth and color must be pixel-aligned between cells; only eyelids change. Each face fills about 82 percent of its cell, centered horizontally and vertically, no overlap. Soft ambient lighting baked only into the head. Keep features bold and readable when each cell is displayed at 28 pixels. True transparent background everywhere outside the heads; no ground shadow, no glow, no circle badge, no box, no checkerboard drawn, no text, no numbers, no borders.",
+      "columns": 2,
+      "rows": 1,
+      "file": "/expressions/v2/smile.png"
+    },
+    {
+      "name": "happy",
+      "source": "exec-eef0441c-5b33-4d6d-85f3-e46b0243a04e.png",
+      "prompt": "Use case: stylized-concept. Input image is a CHARACTER AND STYLE REFERENCE only. Create one transparent animation sprite strip of this same original lemon-shaped large-eyed clay face, with EXACTLY TWO equal square cells side-by-side (2:1 canvas). Expression: DELIGHTED, a broad friendly open smile with a small visible tooth, big eyes shining, cheerful but tasteful, not exaggerated manic. LEFT eyes OPEN, RIGHT eyes CLOSED during a blink. Keep same yellow head, exact silhouette, centered pose, head scale filling 82% of each cell, lighting and same mouth in both frames, only eyelids change. Make details readable at 30px. True transparent background outside heads, no background badge, no shadow outside face, no glow, no objects, no letters/numbers, no grid, no watermark. Match reference material and character closely. Completely original, do not copy any branded emoji.",
+      "columns": 2,
+      "rows": 1,
+      "file": "/expressions/v2/happy.png"
+    },
+    {
+      "name": "attentive",
+      "source": "exec-2b91befe-2fb8-4b67-b48e-036623bd3d52.png",
+      "prompt": "Use case: stylized-concept. Reference image is CHARACTER AND MATERIAL REFERENCE only. Generate ONE transparent two-frame animation sprite strip of the same original lemon-shaped big-eyed clay mascot. Exactly TWO equal square cells side-by-side, 2:1 canvas. Expression: CALM ATTENTIVE, amber-yellow head, eyebrows slightly raised, large forward-looking white eyes with dark pupils, a small relaxed almost-straight mouth (not a smile or angry frown). This means 'pay attention to quantity', not danger or sickness. LEFT eyes open, RIGHT eyes closed in blink. Maintain the exact same centered silhouette, scale filling 82% of each square cell, facial positions, lighting and mouth between frames; only eyelids change. Premium restrained 3D render, readable at 28px. True transparent alpha outside head, no background, no circle badge, no glow, no external shadow, no text/numbers, no borders, no objects, no watermark. Original character, not any proprietary emoji.",
+      "columns": 2,
+      "rows": 1,
+      "file": "/expressions/v2/attentive.png"
+    },
+    {
+      "name": "alert",
+      "source": "exec-9235432c-c77c-45e8-9b9f-c97f2d3b9036.png",
+      "prompt": "Use case: stylized-concept. Input is character-and-style reference, not an edit target. ONE transparent two-frame animation sprite strip of this SAME original lemon-shaped large-eyed clay character, now soft coral-red colored to indicate closer attention. EXACTLY TWO equal square cells side by side, 2:1 canvas. Expression: gently CONCERNED and attentive, raised inner eyebrows and a tiny downcurved mouth, not anger, fear, danger, sickness or a verdict. LEFT cell large white eyes OPEN forward, RIGHT eyes CLOSED during a short blink; both share exact same silhouette, scale, center, color, mouth, light. Face fills 82% of each cell. Soft refined 3D material, bold readable features at 28px. True transparent alpha outside the heads, no badge, no background, no shadow outside face, no glow, no accessories, no text or numbers, no watermark or borders. Keep original reference identity, not a branded emoji.",
+      "columns": 2,
+      "rows": 1,
+      "file": "/expressions/v2/alert.png"
+    },
+    {
+      "name": "sleep",
+      "source": "exec-d0e4d20c-b981-4847-8eca-7bfdb895192d.png",
+      "prompt": "Use case: stylized-concept. Reference image is original CHARACTER AND STYLE REFERENCE. Create ONE SLEEPING animation sprite strip of the SAME yellow lemon-shaped clay face. EXACTLY TWO equal square cells side-by-side (2:1 canvas). Same centered head scale filling 82% of each cell, same shape and lighting. Both frames eyes peacefully CLOSED using simple curved eyelids, eyebrows relaxed, mouth tiny relaxed curved line. LEFT rest pose. RIGHT same face in quiet breathing pose with mouth a very small round o and subtly fuller cheeks, head silhouette and alignment otherwise unchanged. Very quiet gentle sleep, not illness or sadness. Preserve original large-eye character identity and refined soft 3D material. TRUE transparent alpha outside face. No Z text, no letters/numbers, no badge, no background, no ground shadow, no glow, no accessories, no borders, no watermark. Bold features readable at 30px.",
+      "columns": 2,
+      "rows": 1,
+      "file": "/expressions/v2/sleep.png"
+    },
+    {
+      "name": "gaze",
+      "source": "exec-1ce863f7-e1e8-4679-8a1f-d5807ea18ed0.png",
+      "prompt": "Use case: stylized-concept. Reference is CHARACTER AND STYLE reference only. Generate ONE production gaze-animation sprite sheet on true transparent alpha. SAME friendly original yellow lemon-shaped large-eyed clay face as reference, gentle subtle smile. EXACTLY 6 equal SQUARE cells arranged 3 columns by 2 rows, canvas aspect ratio 3:2. Frame order reading left to right then next row: top left LOOK STRAIGHT; top middle LOOK LEFT (both pupils shifted left); top right LOOK RIGHT (both pupils shifted right); bottom left LOOK UP (both pupils shifted up); bottom middle LOOK DOWN (both pupils shifted down); bottom right BLINK (eyes closed curved eyelids). Every cell has one complete centered face filling 82% of cell with SAME silhouette, face scale, head center, lighting, mouth and brows. Only pupils and eyelids change, do NOT turn or rotate head. Pupils clear and strongly shifted so gaze readable at 50 pixels. Consistent polished soft 3D material. No background, no frames, no ground shadows, no labels, no numbers, no watermark, no accessories, no circle badges, no checkerboard drawn. Transparent margins and transparent outside every head. Original mascot not a branded emoji.",
+      "repairPrompt": "Use case: background-extraction. Edit target is attached 3x2 gaze sprite sheet. REMOVE ALL background pixels: the gold/brown backdrop MUST become real transparent alpha, not a solid color and not a checkerboard drawing. Preserve exactly the six yellow clay heads, their faces, frame order, pose, locations, sizes and existing 3-by-2 equal-square grid. All empty spaces, corners, borders, and spaces between heads must be truly fully transparent, with clean cutout antialiased edges, NO haze, glow or shadow outside heads. Do not change eyes or facial expressions or character. This is a transparent production sprite asset, NOT a showcase image.",
+      "columns": 3,
+      "rows": 2,
+      "file": "/expressions/v2/gaze.png"
+    }
+  ]
+}
